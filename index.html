@@ -6,17 +6,19 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body>
-  <div class="matrix">
-    <img class="matrix__image" src="./eisenhower-matrix.jpg"><a class="matrix__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
+  <header>
+    <div class="matrix">
+      <img class="matrix__image" src="./eisenhower-matrix.jpg"><a class="matrix__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </div>
+  </header>
   <div class="todo">
-    <p class="todo__input">
-      <label class="todo__input-title">Add Item</label>
+    <div class="todo__input">
+      <h3 class="todo__input-title">Add Item</h3>
       <div class="todo__input-row">
           <input class="todo__input-area task" id="new-task" type="text">
           <button class="todo__input-btn">Add</button>
       </div>
-    </p>
+    </div>
     <h3 class="todo__title">Todo</h3>
     <ul class="todo__list" id='incomplete-tasks'>
       <li class="todo__list-item">
@@ -33,17 +35,17 @@
           <button class="todo__list-edit-btn">Save</button>
           <button class="todo__list-rm-btn"><img class="todo__list-delete-ico" src="./remove.svg"></button>
       </li>
-  </ul>
-  <h3>Completed</h3>
-  <ul class="todo__list" id="completed-tasks">
-      <li class="todo__list-item">
-          <input class="todo__list-mark" type="checkbox" checked>
-          <label class="todo__list-item-name task">See the Doctor</label>
-          <input class="todo__list-input-area task" type="text">
-          <button class="todo__list-edit-btn">Edit</button>
-          <button class="todo__list-rm-btn"><img class="todo__list-delete-ico" src="./remove.svg"></button>
-      </li>
-  </ul>
+    </ul>
+    <h3 class="todo__title">Completed</h3>
+    <ul class="todo__list" id="completed-tasks">
+        <li class="todo__list-item">
+            <input class="todo__list-mark" type="checkbox" checked>
+            <label class="todo__list-item-name task">See the Doctor</label>
+            <input class="todo__list-input-area task" type="text">
+            <button class="todo__list-edit-btn">Edit</button>
+            <button class="todo__list-rm-btn"><img class="todo__list-delete-ico" src="./remove.svg"></button>
+        </li>
+    </ul>
   </div>
   <script src="app.js"></script>
 </body>
