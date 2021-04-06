@@ -1,12 +1,17 @@
 /* Basic Style */
+* {
+  box-sizing: border-box;
+}
+
 body {
+  box-sizing: border-box;
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
 ul {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 li, 
 h3 {
@@ -42,7 +47,7 @@ button:hover {
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .matrix { 
     text-align: center;
   }
@@ -50,12 +55,12 @@ button:hover {
 .todo {
   display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 .todo__input-row {
   display: flex;
@@ -70,7 +75,7 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
-.task {
+.input-area {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -82,7 +87,7 @@ button:hover {
   font-family: Lato, sans-serif;
   color: #888;
 }
-.task:focus {
+.input-area:focus {
   color: #333;
 }
 
@@ -91,7 +96,7 @@ button:hover {
   display: block;
   margin: 0 0 20px;
 }
-#new-task {
+.todo__input-area {
   width: 318px;
 }
 
@@ -118,6 +123,7 @@ button:hover {
 }
 .todo__list-input-area {
   width: 226px;
+  display: none;
 }
 .todo__list-delete-ico {
   height: 2em;
@@ -135,15 +141,12 @@ button:hover {
 }
 
 /* Edit Task */
-.todo__list-item .todo__list-input-area {
-  display: none;
-}
 
 .edit-mode .todo__list-input-area {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .todo__list-item-name {
+.edit-mode > .todo__list-item-name {
   display: none;
 }  
