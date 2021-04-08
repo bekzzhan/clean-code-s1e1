@@ -137,11 +137,11 @@ button{
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.input {
     display: none;
 }
 
-.input {
+.edit-mode .input {
     display: inline-block;
     width: 224px;
 }
