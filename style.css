@@ -1,27 +1,24 @@
 /* Basic Style */
-* {
-  box-sizing: border-box;
-}
-
-body {
+.body {
   box-sizing: border-box;
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
-ul {
+.todo__list {
   margin: 0;
   padding: 0;
 }
-li, 
-h3 {
+.todo__list-item, 
+.todo__title {
   list-style: none;
 }
-input,
-button {
+.input-area,
+.todo__list-mark,
+.button {
   outline: none;
 }
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -30,7 +27,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   color: #3a3A3a;
 }
 /* Heading */
@@ -141,12 +138,10 @@ button:hover {
 }
 
 /* Edit Task */
-
 .edit-mode .todo__list-input-area {
   display: inline-block;
   width: 224px;
 }
-
-.edit-mode > .todo__list-item-name {
+.edit-mode .todo__list-item-name {
   display: none;
-}  
+}

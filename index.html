@@ -1,52 +1,81 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo App</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" 
+        rel="stylesheet">
+  <link rel="stylesheet" 
+        href="style.css" 
+        media="screen" 
+        charset="utf-8">
 </head>
-<body>
+<body class="body">
   <header class="matrix">
-    <img class="matrix__image" src="./eisenhower-matrix.jpg" alt="eisenhower matrix">
+    <img class="matrix__image" 
+         src="./eisenhower-matrix.jpg" 
+         alt="eisenhower matrix">
     <a class="matrix__link" 
-        href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+        href="https://goal-life.com/page/method/matrix-eisenhower">
+        Want more details?
+    </a>
   </header>
   <section class="todo">
     <div class="todo__input">
       <label class="todo__input-title">Add Item</label>
       <div class="todo__input-row">
-        <input class="todo__input-area task input-area" id="new-task" type="text">
-        <button class="todo__input-btn">Add</button>
+        <input class="todo__input-area task input-area" 
+               id="new-task" 
+               type="text">
+        <button class="todo__input-btn button">Add</button>
       </div>
     </div>
     <h3 class="todo__title">Todo</h3>
-    <ul class="todo__list" id="incomplete-tasks">
+    <ul class="todo__list" 
+        id="incomplete-tasks">
       <li class="todo__list-item">
-        <input class="todo__list-mark" type="checkbox">
+        <input class="todo__list-mark" 
+               type="checkbox">
         <label class="todo__list-item-name task">Pay Bills</label>
-        <input class="todo__list-input-area task input-area" type="text">
-        <button class="todo__list-edit-btn">Edit</button>
-        <button class="todo__list-rm-btn"><img class="todo__list-delete-ico" src="./remove.svg" alt="remove button"></button>
+        <input class="todo__list-input-area task input-area" 
+               type="text">
+        <button class="todo__list-edit-btn button">Edit</button>
+        <button class="todo__list-rm-btn button">
+          <img class="todo__list-delete-ico" 
+               src="./remove.svg" 
+               alt="remove button">
+        </button>
       </li>
       <li class="todo__list-item edit-mode">
-        <input class="todo__list-mark" type="checkbox">
+        <input class="todo__list-mark" 
+               type="checkbox">
         <label class="todo__list-item-name task">Go Shopping</label>
-        <input class="todo__list-input-area task input-area" type="text" value="Go Shopping">
-        <button class="todo__list-edit-btn">Save</button>
-        <button class="todo__list-rm-btn"><img class="todo__list-delete-ico" src="./remove.svg" alt="remove button"></button>
+        <input class="todo__list-input-area task input-area" 
+               type="text" 
+               value="Go Shopping">
+        <button class="todo__list-edit-btn button">Save</button>
+        <button class="todo__list-rm-btn button">
+          <img class="todo__list-delete-ico" 
+               src="./remove.svg" 
+               alt="remove button">
+        </button>
       </li>
     </ul>
     <h3 class="todo__title">Completed</h3>
-    <ul class="todo__list" id="completed-tasks">
+    <ul class="todo__list" 
+        id="completed-tasks">
       <li class="todo__list-item">
-          <input class="todo__list-mark" type="checkbox" checked>
+          <input class="todo__list-mark" 
+                 type="checkbox" checked>
           <label class="todo__list-item-name task">See the Doctor</label>
-          <input class="todo__list-input-area task input-area" type="text">
-          <button class="todo__list-edit-btn">Edit</button>
-          <button class="todo__list-rm-btn"><img class="todo__list-delete-ico" src="./remove.svg" alt="remove button"></button>
+          <input class="todo__list-input-area task input-area" 
+                 type="text">
+          <button class="todo__list-edit-btn button">Edit</button>
+          <button class="todo__list-rm-btn button">
+            <img class="todo__list-delete-ico" 
+                 src="./remove.svg" 
+                 alt="remove button">
+          </button>
       </li>
     </ul>
   </section>

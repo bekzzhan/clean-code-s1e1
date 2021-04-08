@@ -44,9 +44,9 @@ var createNewTaskElement=function(taskString){
     editInput.classList.add("todo__list-input-area", "task", "input-area");
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.classList.add("todo__list-edit-btn");
+    editButton.classList.add("todo__list-edit-btn", "button");
 
-    deleteButton.className="todo__list-rm-btn";
+    deleteButton.classList.add("todo__list-rm-btn", "button");
     deleteButtonImg.src='./remove.svg';
     deleteButtonImg.className="todo__list-delete-ico";
     deleteButton.appendChild(deleteButtonImg);
